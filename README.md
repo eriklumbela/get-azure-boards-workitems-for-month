@@ -1,6 +1,6 @@
 **NOTE**: this is a very rough script and may need to be adapted to your specific needs. It's meant to be a starting point to discover what's possible with the Azure DevOps REST API.
 
-# Get azure boards workitemnes
+# Get azure boards work items
 
 **This script fetches work items assigned to a user in sprints for a specific month in Azure DevOps.**
 
