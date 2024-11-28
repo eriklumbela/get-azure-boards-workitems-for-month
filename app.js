@@ -1,11 +1,12 @@
 const axios = require('axios');
+require('dotenv').config();
 
-// Set up Azure DevOps parameters
-const organization = 'REPLACE_WITH_ORG';                        // Replace with your organization
-const project = 'REPLACE_WITH_PROJECT';                         // Replace with your project
-const team = 'REPLACE_WITH_TEAM';                               // Replace with your team name
-const userEmail = 'REPLACE_WITH_EMAIL';                         // Replace with your email
-const pat = 'REPLACE_WITH_PERSONAL_ACCESS_TOKEN';               // Replace with your Personal Access Token
+// Set up Azure DevOps parameters (requires environment variables, use .env file: https://www.dotenv.org/docs/quickstart?r=1)
+const organization = process.env.AZURE_DEVOPS_ORGANIZATION
+const project = process.env.AZURE_DEVOPS_PROJECT_NAME
+const team = process.env.AZURE_DEVOPS_TEAM
+const userEmail = process.env.AZURE_DEVOPS_USEREMAIL
+const pat = process.env.AZURE_DEVOPS_PAT
 const base64PAT = Buffer.from(`:${pat}`).toString('base64');
 
 // Desired year and month for sprint
