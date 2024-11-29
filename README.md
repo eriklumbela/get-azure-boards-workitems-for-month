@@ -12,6 +12,11 @@ It then sorts the work items by the date they entered the "In Progress" state.
 - Install dependencies using `npm install`.
 
 ## How to run:
-1. Replace the placeholders in the `app.js` script with your Azure DevOps organization, project, team, email, and Personal Access Token.
+1. Create a `.env` file to define variables required in the `app.js` script with
+  - Azure DevOps organization, 
+  - project, 
+  - team, 
+  - email and 
+  - Personal Access Token.
 2. In `app.js` set the `targetMonth` variable to desired month
 3. Run the script using `node app.js`. or `npm start`
